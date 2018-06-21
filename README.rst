@@ -44,6 +44,6 @@ About q2a
 Question2Answer_ is a free and open source PHP software for Q&A sites.
 
   
-.. _github: https://github.com/q2apro/q2apro-change-post-owner
+.. _github: https://github.com/q2apro/q2apro-caching
 .. _OpenSource: http://www.gnu.org/licenses/gpl.html
 .. _Question2Answer: http://www.question2answer.org/
