@@ -13,15 +13,17 @@ Installation
 #. Get the source code for this plugin directly from github_.
 #. Extract the files.
 #. Upload the files to a subfolder called ``q2apro-caching`` inside the ``qa-plugin`` folder of your Q2A installation.
-#. *Create a folder `qa-cache` in the root of your q2a installation.
-#. Do NOT RENAME the folder ``q2apro-caching``.
-#. Navigate to your site, go to **Admin -> Plugins**. Check if the plugin "q2apro caching" is listed and *enable* it.
+#. **Create a folder ``qa-cache`` in the root of your q2a installation.**
+#. Do NOT RENAME the plugin folder ``q2apro-caching`` or plugin cannot initialize.
+#. Navigate to your site, go to **Admin -> Plugins**. Check if the plugin "q2apro caching" is listed and **enable** it.
 
 ----------
 Notes
 ----------
 
 This is a fork from [bndr](https://github.com/bndr/q2a-caching) + [sama55](https://github.com/sama55) + [stevenev](https://github.com/stevenev/q2a-caching).
+
+The other versions of the plugin work well, however, they empty the entire file cache on incoming events. This plugin here only deletes the specific question page if it gets changed. So basically it should be more performant. Testers needed :)
 
 ----------
 Disclaimer
