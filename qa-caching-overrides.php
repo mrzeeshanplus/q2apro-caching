@@ -1,21 +1,25 @@
 <?php
 if (!defined('QA_VERSION')) { // don't allow this page to be requested directly from browser
-    header('Location: ../../');
-    exit;
+	header('Location: ../../');
+	exit;
 }
 
 /*
 Return the user identification cookie sent by the browser for this page request, or null if none
 */
-function qa_cookie_get($ignorcache = false)
+function qa_cookie_get($ignorcache=false) 
 {
-    if ($ignorcache) {
-        return qa_cookie_get_base();
-    } else {
-        $main = new qa_caching_main;
-        if ($main->now_caching()) {
-            return null;
-        }
-        return qa_cookie_get_base();
-    }
+	if($ignorcache) 
+	{
+		return qa_cookie_get_base();
+	}
+	else
+	{
+		$main = new qa_caching_main;
+		if($main->now_caching())
+		{
+			return null;
+		}
+		return qa_cookie_get_base();
+	}
 }
